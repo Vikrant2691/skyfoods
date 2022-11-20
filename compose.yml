@@ -1,0 +1,8 @@
+services: 
+  web: 
+    build: ../homefood-main 
+    ports: 
+      - '8888:8888'
+    command: python manage.py runserver 0.0.0.0:8888
+    expose:
+      - 8888
